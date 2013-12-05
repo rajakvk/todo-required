@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>TODO - offline</title>
+	<link rel="stylesheet" type="text/css" href="styles/todo.css" />
+</head>
+<body>
+	<div id="container">
+		<header>
+			<ul id="menu">
+				<li data-id="home"><a id="link-home" href="#">Home</a></li>
+				<li data-id="add" class="last"><a id="link-add" href="#">Add</a></li>
+			</ul>
+		</header>
+		<section>
+			<div id="add-me">
+				<h1>Add me</h1>
+				<p class="message"></p>
+				<input class="txt-add" type="text" />
+				<input class="save" type="button" value="Save" />
+			</div>
+		</section>
+		<section>
+			<div id="list-me">
+				<h1>List me</h1>
+				<p class="message"></p>
+				<ul>
+				</ul>
+			</div>
+		</section>
+		<footer>
+			<ul>
+				<li>copy right @rajakvk</li>
+			</ul>
+		</footer>
+	</div>
+	<script data-main="scripts/main" src="scripts/lib/require.js"></script>
+</body>
+</html>

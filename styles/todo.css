@@ -1,0 +1,98 @@
+h1, body {
+	margin: 0;
+	padding: 0;	
+}
+
+ul {
+	margin: 0;
+	padding: 0;
+}
+header, section {
+	margin-bottom: 20px;
+}
+
+h1 {
+	background-color: #ddd;
+	padding: 10px 0 10px 10px;
+	border-bottom: 1px solid;
+	border-left: 15px solid;
+	border-color: #999;
+}
+
+#container {
+	margin: 10px;
+}
+
+#menu {
+	overflow: hidden;	
+}
+
+#menu li {
+	float: left;	
+	list-style: none;
+	width: 49%;
+	text-align: center;
+	margin: 0 auto;
+	padding: 20px 0;
+	background-color: #ddd;
+	cursor: pointer;
+}
+
+#menu li.last {
+	margin-left: 2%;}
+
+#menu li a {
+	text-decoration: none;
+	margin: 0 auto;
+	color: #000;
+}
+
+#menu li:hover {
+	background-color: #999;
+}
+
+#menu li:hover a {
+	color: #fff;
+}
+
+#menu ul, #list-me, #add-me {
+	clear: both;	
+}
+
+#add-me .txt-add {
+	padding: 10px 0;
+	width: 100%;
+}
+
+#add-me .save {
+	display: block;
+	padding: 10px 40px;
+	font-weight: bold;
+	margin-top: 10px;
+}
+
+.message {
+	border: 1px solid;
+	padding: 10px 0;
+	border-color: white;
+	margin: 0;
+}
+
+.success, .error {
+	border-color: #ddd;
+	padding: 10px;
+	margin: 10px 0;
+}
+
+.success {
+	background-color: palegreen;
+}
+
+.error {
+	background-color: tomato;
+}
+
+footer {
+	font-size: 12px;
+	color: #ddd;
+}
