@@ -1,0 +1,118 @@
+@import '_colors';
+@mixin border-radius($radius) {
+	-webkit-border-radius: $radius;
+	-moz-border-radius: $radius;
+	-ms-border-radius: $radius;
+	-o-border-radius: $radius;
+	border-radius: $radius;
+}
+h1, body {
+	margin: 0;
+	padding: 0;	
+}
+
+html {
+	-webkit-text-size-adjust: 100%;
+	-ms-text-size-adjust: 100%;
+}
+
+ul {
+	margin: 0;
+	padding: 0;
+}
+header, section {
+	margin-bottom: 20px;
+}
+
+h1 {
+	background-color: $primary-color;
+	padding: 10px 0 10px 10px;
+	border-bottom: 1px solid;
+	border-left: 15px solid;
+	border-color: $border-color;
+}
+
+#container {
+	margin: 10px;
+}
+
+#menu {
+	overflow: hidden;
+	li {
+		float: left;	
+		list-style: none;
+		width: 49%;
+		text-align: center;
+		margin: 0 auto;
+		padding: 20px 0;
+		background-color: $primary-color;
+		cursor: pointer;
+		a {
+			text-decoration: none;
+			margin: 0 auto;
+			color: #000;
+		}	
+	}
+	li:hover {
+		background-color: #999;
+		a {
+			color: #fff;
+		}
+	}
+	li.last {
+		margin-left: 2%;
+	}
+	ul {
+		clear: both;	
+	}
+}
+
+#list-me {
+	clear: both;	
+}
+
+#add-me {
+	clear: both;	
+	.txt-add {
+		padding: 10px 0;
+		width: 100%;
+	}
+	.save {
+		display: block;
+		padding: 10px 40px;
+		font-weight: bold;
+		margin-top: 10px;
+	}
+}
+
+.box {
+	@include border-radius(5px);
+}
+
+.message {
+	border: 1px solid;
+	padding: 10px 0;
+	border-color: white;
+	margin: 0;
+}
+
+.success, .error {
+	border-color: #ddd;
+	padding: 10px;
+	margin: 10px 0;
+}
+
+.success {
+	@extend .message;
+	background-color: $success-color;;
+}
+
+.error {
+	@extend .message;
+	background-color: $error-color;
+}
+
+footer {
+	font-size: 12px;
+	color: #ddd;
+}
